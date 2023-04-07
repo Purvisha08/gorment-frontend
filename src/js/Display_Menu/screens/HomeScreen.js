@@ -12,7 +12,7 @@ import Backdrop from "../components/Backdrop";
 import { getProducts as listProducts } from "../redux/actions/productActions";
 
 const HomeScreen = () => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch([]);
 
   const getProducts = useSelector((state) => state.getProducts);
   const { products, loading, error } = getProducts;
